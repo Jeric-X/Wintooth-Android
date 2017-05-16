@@ -1,0 +1,115 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingStart="10dp"
+    android:paddingEnd="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/show_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_name" />
+
+        <EditText
+            android:layout_gravity="bottom"
+            android:id="@+id/edit_name"
+            android:inputType="textNoSuggestions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/button_send"
+            android:onClick="sendMessage" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/show_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_text" />
+
+        <EditText
+            android:layout_gravity="bottom"
+            android:id="@+id/edit_account"
+            android:inputType="textEmailAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/button_send"
+            android:onClick="sendMessage" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/show_text_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_text_password" />
+
+        <EditText
+            android:layout_gravity="bottom"
+            android:id="@+id/edit_password"
+            android:inputType="textPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/button_add"
+            android:onClick="addAccount" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/get_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_text" />
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/show_message"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/button_create"
+            android:onClick="showMessage" />
+    </LinearLayout>
+</LinearLayout >
